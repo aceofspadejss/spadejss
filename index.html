@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spade JSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="fotor-202409210334.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+
+                <img src="fotor-202409210334.png" class="bi me-2" width="40" height="32" alt="">
+
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-3 text-white">Home</a></li>
+                    <li><a href="#" class="nav-link px-3 text-white">Events</a></li>
+                    <li><a href="#" class="nav-link px-3 text-white">Core Team</a></li>
+                    <li><a href="#" class="nav-link px-3 text-white">Gallery</a></li>
+                    <li><a href="#" class="nav-link px-3 text-white">About</a></li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form> -->
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container" id="h">
+
+        <header>Registration Form</header>
+        <form action="https://formspree.io/f/mdknrzrl" method="POST" class="form">
+            <div class="input-box">
+                <label>Full Name</label>
+                <input name="full_name" type="text" placeholder="Enter full name" required />
+            </div>
+
+            <div class="input-box">
+                <label>Email Address</label>
+                <input name="Email_address" type="text" placeholder="Enter email address" required />
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label>Phone Number</label>
+                    <input name="phone_number" type="" placeholder="Enter phone number" required />
+                </div>
+                <div class="input-box">
+                    <label>Birth Date</label>
+                    <input name="Birth_date" type="date" placeholder="Enter birth date" required />
+                </div>
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label>10th Percentage</label>
+                    <input name="10th_percentage" type="text" placeholder="Enter 10th percentage" required />
+                </div>
+                <div class="input-box">
+                    <label>12th Percentage</label>
+                    <input name="12th_percentage" type="text" placeholder="Enter 12th percentage" required />
+                </div>
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label>JEE Percentile</label>
+                    <input name="jee_percentile" type="text" placeholder="Enter JEE percentile" required />
+                </div>
+
+
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label>Branch</label>
+                    <input type="text" name="branch" value="Norway"
+                        selectBoxOptions="Canada;Denmark;Finland;Germany;Mexico">
+                </div>
+            </div>
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" checked />
+                        <label for="check-male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" />
+                        <label for="check-female">Female</label>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label for="exampleFormControlTextarea1" class="form-label">Reason for Joining our Society</label>
+                <textarea name="description" required class="form-control" placeholder="Describe in 200 words             (P.S.- Don't use AI)"
+                    rows="3"></textarea>
+            </div>
+            <label id="h">Add Your 5 Skills</label>
+            <div class="column">
+                <div class="input-box">
+                    <input name="firstskill" type="text" placeholder="First Skill" required />
+                </div>
+                <div class="input-box">
+                    <!-- <label for=""></label> -->
+                    <input type="text" name="secondskill" placeholder="Second Skill" required />
+                </div>
+
+            </div>
+            <div class="column">
+                <div class="input-box">
+
+                    <input type="text" name="thirdskill" placeholder="Third Skill" required />
+                </div>
+                <div class="input-box">
+
+                    <input type="text" name="forthskill" placeholder="Forth Skill" required />
+                </div>
+
+            </div>
+            <div class="column">
+                <div class="input-box">
+
+                    <input type="text" name="fifthskill" placeholder="Fifth Skill" required />
+                </div>
+                <div class="input-box"></div>
+
+            </div>
+
+            <button>Submit</button>
+        </form>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script>createEditableSelect(document.forms[0].branch);</script>
+</body>
+
+</html>
